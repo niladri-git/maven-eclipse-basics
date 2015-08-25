@@ -1,0 +1,9 @@
+http://www.mkyong.com/maven/how-to-create-a-java-project-with-maven/
+
+mvn archetype:generate -DgroupId=com.mkyong -DartifactId=NumberGenerator -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+mvn eclipse:eclipse
+
+mvn package
+
+java -cp target/NumberGenerator-1.0-SNAPSHOT.jar com.mkyong.App
